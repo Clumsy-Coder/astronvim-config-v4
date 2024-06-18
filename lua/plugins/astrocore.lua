@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -29,9 +29,32 @@ return {
       opt = { -- vim.opt.<key>
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
-        spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        -- color column
+        colorcolumn = { 100 },
+        -- whitespace characters
+        list = true, -- show whitespace characters
+        listchars = { tab = "│→", extends = "⟩", precedes = "⟨", trail = "·", nbsp = "␣", eol = "↲" },
+        showbreak = "↪ ", -- string to put at the start of lines that have been wrapped
+        -- swapfile
+        swapfile = false, -- disable swapfile so plugin `willothy/flatten.nvim` can work properly
+        -- spellfile
+        spell = true,
+        spelllang = "en_ca",
+        spellfile = vim.fn.expand("~/.config/nvim/lua/user/spell/en.utf-8.add"),
+        -- cursor style
+        -- setting cursor style in different modes
+        -- check current guicursor value with command ':set guicursor'
+        -- https://github.com/AstroNvim/AstroNvim/issues/903#issuecomment-1219860755
+        -- https://vim.fandom.com/wiki/Configuring_the_cursor
+        -- i = insert
+        -- v = visual
+        -- c = command
+        -- n = normal
+        -- guicursor = "n-v-c-i-sm:block,ci-ve:ver25,r-cr-o:hor20",
+
+        splitkeep = "screen",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
