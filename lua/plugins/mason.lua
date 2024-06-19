@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -9,8 +9,26 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
+      format_on_save = false,
+      automatic_installation = true,
       ensure_installed = {
+        "angularls",
+        "ansiblels",
+        "arduino_language_server",
+        "bashls",
+        "cssls",
+        "dockerls",
+        "emmet_ls",
+        "html",
+        "jsonls",
         "lua_ls",
+        "prismals",
+        "prosemd_lsp",
+        "solargraph",
+        "tailwindcss",
+        "tsserver",
+        "vimls",
+        "yamlls",
         -- add more arguments for adding more language servers
       },
     },
@@ -21,8 +39,23 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+        "actionlint",
+        "ansible-lint",
+        "beautysh",
+        "codespell",
+        "eslint-lsp",
+        "gitlint",
+        "hadolint",
+        "jsonlint",
+        "luacheck",
+        "markdownlint",
+        "prettierd",
+        "shellcheck",
+        "shfmt",
         "stylua",
-        -- add more arguments for adding more null-ls sources
+        "vint",
+        "yamllint",
+        -- "misspell",
       },
     },
   },
