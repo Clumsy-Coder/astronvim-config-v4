@@ -42,7 +42,7 @@ return {
         -- spellfile
         spell = true,
         spelllang = "en_ca",
-        spellfile = vim.fn.expand("~/.config/nvim/lua/user/spell/en.utf-8.add"),
+        spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add"),
         -- cursor style
         -- setting cursor style in different modes
         -- check current guicursor value with command ':set guicursor'
