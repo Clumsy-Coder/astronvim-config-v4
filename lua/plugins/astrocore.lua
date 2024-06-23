@@ -110,5 +110,23 @@ return {
         buftypes = {}, -- buffer types to ignore sessions
       },
     },
+    filetypes = {
+      extension = {
+          mdx = "markdown.mdx",
+          qmd = "markdown",
+      },
+      filename = {
+        ["Brewfile"] = "ruby",
+        ["dockerfile"] = "dockerfile",
+        [".yamllint"] = "yaml",
+      },
+      pattern = {
+        [".*%.tmux.conf"] = "tmux",       -- files in dotfiles/tools/tmux/ folder
+        [".env.*"] = "conf"
+      },
+      -- extension = {
+      --   -- conf = "config",
+      -- }
+    }
   },
 }
