@@ -43,6 +43,7 @@ return {
         "ansible-lint",
         "beautysh",
         "codespell",
+        "editorconfig-checker",
         "eslint-lsp",
         "gitlint",
         "hadolint",
