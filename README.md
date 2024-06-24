@@ -6,7 +6,7 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 
 ## 🛠️ Installation
 
-#### Make a backup of your current nvim and shared folder
+### 1. Make a backup of your current nvim and shared folder
 
 ```shell
 mv ~/.config/nvim ~/.config/nvim.bak
@@ -15,19 +15,21 @@ mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
-#### Clone the repository
+### 2. Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/Clumsy-Coder/astronvim-config-v4 ~/.config/nvim
 ```
 
-#### Start Neovim
+### 3. install plugins headless
+
+```shell
+nvim --headless +q
+```
+
+check: https://docs.astronvim.com/reference/alt_install/#unattended-installation
+
+### 4.Start Neovim
 
 ```shell
 nvim
