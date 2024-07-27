@@ -1,6 +1,18 @@
 -- A simple wrapper around git worktree operations
 -- https://github.com/Clumsy-Coder/git-worktree.nvim
 
+-- to use this, the cloned repo needs to be converted into a bare repo
+-- obtained from
+-- - https://stackoverflow.com/a/2200662/3053548
+--
+-- steps:
+-- cd repo
+-- mv .git ../repo.git # renaming just for clarity
+-- cd ..
+-- rm -fr repo
+-- cd repo.git
+-- git config --bool core.bare true
+
 local prefix = "<Leader>g"
 
 ---@type LazySpec
