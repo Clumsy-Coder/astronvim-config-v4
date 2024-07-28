@@ -27,13 +27,18 @@ return {
         opts = {
           mappings = {
             n = {
-              [prefix] = {
-                w = {
-                  name = "worktrees",
-                  a = { function() require("telescope").extensions.git_worktree.create_git_worktree() end, "Add worktree", silent = true, },
-                  s = { function() require("telescope").extensions.git_worktree.git_worktrees() end, "Switch worktree" },
-                  -- r = { function() require("git-worktree").delete_worktree() end, "Remove worktree"},
-                },
+              [prefix .. "w"] = {
+                desc = "worktrees",
+                -- r = { function() require("git-worktree").delete_worktree() end, "Remove worktree"},
+              },
+              [prefix .. "wa"] = {
+                function() require("telescope").extensions.git_worktree.create_git_worktree() end,
+                desc = "Add worktree",
+                silent = true,
+              },
+              [prefix .. "ws"] = {
+                function() require("telescope").extensions.git_worktree.git_worktrees() end,
+                desc = "Switch worktree",
               },
             },
           },
