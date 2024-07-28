@@ -15,12 +15,10 @@ return {
           n = {
             [prefix] = {
               -- use markdown icon from nvim-tree/nvim-web-devicons
-              name = require("nvim-web-devicons").get_icon_by_filetype("markdown") .. " Markdown",
-              g = {
-                name = "Glow",
-                p = { "<cmd>Glow<cr>", "Preview Markdown (using glow)" },
-              },
+              desc = require("nvim-web-devicons").get_icon_by_filetype("markdown") .. " Markdown",
             },
+            [prefix .. "g"] = { desc = "Glow" },
+            [prefix  .. "gp"] = { "<cmd>Glow<cr>", desc = "Preview Markdown (using glow)" },
           },
         },
       },
