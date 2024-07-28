@@ -37,9 +37,7 @@ return {
         opts = {
           mappings = {
             n = {
-              [prefix] = {
-                e = { "<cmd>Telescope file_browser<cr>", "File explorer" },
-              },
+              [prefix .. "e"] = { "<cmd>Telescope file_browser<cr>", desc = "File explorer" },
             },
           },
         },
@@ -62,9 +60,7 @@ return {
         opts = {
           mappings = {
             n = {
-              [prefix] = {
-                s = { "<cmd>Telescope luasnip<cr>", "Find Snippets" },
-              },
+              [prefix .. "s"] = { "<cmd>Telescope luasnip<cr>", desc = "Find Snippets" },
             },
           },
         },
