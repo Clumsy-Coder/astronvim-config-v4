@@ -18,7 +18,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 ### 2. Clone the repository
 
 ```shell
-git clone https://github.com/Clumsy-Coder/astronvim-config-v4 ~/.config/nvim
+git clone --branch dev git@github.com:Clumsy-Coder/astronvim-config-v4.git ~/.config/nvim
 ```
 
 ### 3. install plugins headless
