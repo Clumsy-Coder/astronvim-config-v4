@@ -15,11 +15,11 @@ return {
           n = {
             [prefix] = {
               -- use markdown icon from nvim-tree/nvim-web-devicons
-              name = require("nvim-web-devicons").get_icon_by_filetype("markdown") .. " Markdown",
-              r = { "<cmd>MarkdownPreview<cr>", "Render Markdown in browser" },
-              s = { "<cmd>MarkdownPreviewStop<cr>", "Stop rendering Markdown in browser" },
-              t = { "<cmd>MarkdownPreviewToggle<cr>", "Toggle rendering Markdown in browser" },
+              desc = require("nvim-web-devicons").get_icon_by_filetype("markdown") .. " Markdown",
             },
+            [prefix .. "r"] = { "<cmd>MarkdownPreview<cr>", desc = "Render Markdown in browser" },
+            [prefix .. "s"] = { "<cmd>MarkdownPreviewStop<cr>", desc = "Stop rendering Markdown in browser" },
+            [prefix .. "t"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle rendering Markdown in browser" },
           },
         },
       },
