@@ -28,6 +28,12 @@ return {
   ft = { "markdown", "rmd" },
   build = function()
     vim.fn["mkdp#util#install"]()
+
+    -- command to run manually
+    -- check (vundle section)
+    -- - https://github.com/iamcco/markdown-preview.nvim?tab=readme-ov-file#installation--usage
+    --
+    -- call mkdp#util#install()
   end,
 }
 
