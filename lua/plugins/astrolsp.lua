@@ -93,6 +93,17 @@ return {
             return client.supports_method("textDocument/semanticTokens/full") and vim.lsp.semantic_tokens ~= nil
           end,
         },
+        -- remap <Leader>lR to open references using telescope
+        -- check
+        -- - https://github.com/AstroNvim/AstroNvim/blob/b6eaa44/lua/astronvim/plugins/_astrolsp_mappings.lua#L97-L98C86
+        -- - https://github.com/AstroNvim/AstroNvim/issues/1423#issue-1476556426
+        ["<Leader>lR"] = {
+          function()
+            require('telescope.builtin').lsp_references()
+          end,
+          desc = "Search references",
+          cond = "textDocument/references",
+        }
       },
     },
     -- A custom `on_attach` function to be run after the default `on_attach` function
