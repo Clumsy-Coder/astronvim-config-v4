@@ -29,4 +29,8 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
+  -- ------------------------------------------------------------------------------------------- --
+  -- keybinding cheatsheet
+  -- press <F1> to open
+  { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
 }
