@@ -55,6 +55,7 @@ return {
         -- guicursor = "n-v-c-i-sm:block,ci-ve:ver25,r-cr-o:hor20",
 
         splitkeep = "screen",
+        conceallevel = 1,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
