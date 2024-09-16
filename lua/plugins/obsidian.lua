@@ -1,3 +1,5 @@
+local prefix = "<Leader>o"
+
 -- Obsidian in neovim
 -- https://github.com/epwalsh/obsidian.nvim
 --
@@ -21,6 +23,26 @@ return {
   dependencies = {
     -- Required.
     "nvim-lua/plenary.nvim",
+    {
+      "AstroNvim/astrocore",
+      ---@type AstroCoreOpts
+      opts = {
+        mappings = {
+          n = {
+            [prefix] = {
+              desc = "Obsidian"
+            },
+            -- apply obsidian template `notes` and remove leading whitespace
+            -- obtained from
+            -- - https://github.com/agalea91/dotfiles/blob/52b7271/nvim/lua/workflows.lua#L28
+            [prefix .. "n"] = {
+              ":ObsidianTemplate notes<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
+              desc = "Use template `notes`",
+            },
+          },
+        },
+      },
+    },
 
     -- see below for full list of optional dependencies 👇
   },
