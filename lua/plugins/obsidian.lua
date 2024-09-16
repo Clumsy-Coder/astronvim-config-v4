@@ -28,7 +28,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = os.getenv("OBSIDIAN_DIR_PATH"), -- env set in ~/dotfiles/tools/zsh/.zshenv
+        path = os.getenv("OBSIDIAN_DIR_PATH") .. "/mimir", -- env set in ~/dotfiles/tools/zsh/.zshenv
       },
       -- {
       --   name = "work",
