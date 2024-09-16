@@ -54,6 +54,13 @@ return {
               ":Telescope find_files search_dirs={'$OBSIDIAN_DIR_PATH/mimir'}<cr>",
               desc = "Find files"
             },
+            -- find files in obsidian vault. search by grep
+            -- obtained from
+            -- - https://github.com/agalea91/dotfiles/blob/52b7271/nvim/lua/workflows.lua#L35
+            [prefix .. "z"] = {
+              ":Telescope live_grep search_dirs={'$OBSIDIAN_DIR_PATH/mimir'}<cr>",
+              desc = "Find words"
+            },
           },
         },
       },
