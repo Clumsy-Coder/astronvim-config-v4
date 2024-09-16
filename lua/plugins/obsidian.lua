@@ -5,6 +5,7 @@ local prefix = "<Leader>o"
 --
 -- obtained from
 -- - https://github.com/epwalsh/obsidian.nvim?tab=readme-ov-file#using-lazynvim
+-- - https://github.com/agalea91/dotfiles/blob/52b7271/nvim/lua/plugins/obsidian.lua
 --
 ---@type LazySpec
 return {
