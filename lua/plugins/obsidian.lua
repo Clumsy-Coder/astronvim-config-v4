@@ -36,6 +36,10 @@ return {
       -- },
     },
 
-    -- see below for full list of options 👇
+    templates = {
+      subdir = "templates",
+      date_format = "%Y-%m-%d",
+      time_format = "%H:%M:%S",
+    },
   },
 }
