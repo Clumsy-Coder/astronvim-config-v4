@@ -39,6 +39,14 @@ return {
               ":ObsidianTemplate notes<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
               desc = "Use template `notes`",
             },
+            -- strip date from note title and replace dashes with spaces
+            -- must have cursor on title
+            -- obtained from
+            -- - https://github.com/agalea91/dotfiles/blob/52b7271/nvim/lua/workflows.lua#L29-L31
+            [prefix .. "f"] = {
+              ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>",
+              desc = "Cleanup title",
+            },
           },
         },
       },
