@@ -90,6 +90,9 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        -- disabled because `obsidian.nvim` plugin uses the which key prefix `<Leader>o
+        ["<Leader>o"] = false,
       },
     },
     -- session management
