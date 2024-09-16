@@ -41,5 +41,9 @@ return {
       date_format = "%Y-%m-%d",
       time_format = "%H:%M:%S",
     },
+    completion = {
+      nvim_cmp = true,
+      min_chars = 2,
+    },
   },
 }
