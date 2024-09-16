@@ -47,6 +47,13 @@ return {
               ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>",
               desc = "Cleanup title",
             },
+            -- find files in obsidian vault. search by filename
+            -- obtained from
+            -- - https://github.com/agalea91/dotfiles/blob/52b7271/nvim/lua/workflows.lua#L34
+            [prefix .. "s"] = {
+              ":Telescope find_files search_dirs={'$OBSIDIAN_DIR_PATH/mimir'}<cr>",
+              desc = "Find files"
+            },
           },
         },
       },
