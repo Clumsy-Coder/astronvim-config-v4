@@ -82,7 +82,7 @@ return {
     },
 
     templates = {
-      subdir = "templates",
+      subdir = "99-Meta/00-Templates",
       date_format = "%Y-%m-%d",
       time_format = "%H:%M:%S",
     },
