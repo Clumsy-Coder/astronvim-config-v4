@@ -56,6 +56,9 @@ return {
 
         splitkeep = "screen",
         conceallevel = 1,
+        -- The minimal number of screen columns to keep to the left and to the right of the cursor
+        -- https://unix.stackexchange.com/a/678286/644926
+        sidescrolloff = 50,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
