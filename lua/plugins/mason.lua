@@ -12,23 +12,23 @@ return {
       format_on_save = false,
       automatic_installation = true,
       ensure_installed = {
-        "angularls",               -- angular
-        "ansiblels",               -- ansible
-        "arduino_language_server", -- arduino
-        "bashls",                  -- bash
-        "cssls",                   -- css
-        "dockerls",                -- docker
-        "emmet_ls",                -- html
-        "html",                    -- html
-        "jsonls",                  -- json
-        "lua_ls",                  -- lua
-        "prismals",                -- prisma
-        "prosemd_lsp",             -- markdown
-        "solargraph",              -- ruby
-        "tailwindcss",             -- css
-        "tsserver",                -- typescript
-        "vimls",                   -- vim
-        "yamlls",                  -- yaml
+        -- "angularls",               -- angular
+        -- "ansiblels",               -- ansible
+        -- "arduino_language_server", -- arduino
+        -- "bashls",                  -- bash
+        -- "cssls",                   -- css
+        -- "dockerls",                -- docker
+        -- "emmet_ls",                -- html
+        -- "html",                    -- html
+        -- "jsonls",                  -- json
+        -- "lua_ls",                  -- lua
+        -- "prismals",                -- prisma
+        -- "prosemd_lsp",             -- markdown
+        -- "solargraph",              -- ruby
+        -- "tailwindcss",             -- css
+        -- "tsserver",                -- typescript
+        -- "vimls",                   -- vim
+        -- "yamlls",                  -- yaml
         -- add more arguments for adding more language servers
       },
     },
