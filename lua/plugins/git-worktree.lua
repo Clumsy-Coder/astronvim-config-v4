@@ -19,6 +19,7 @@ local prefix = "<Leader>g"
 return {
   {
     "Clumsy-Coder/git-worktree.nvim",
+    branch = "dev",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim",
