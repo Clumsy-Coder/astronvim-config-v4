@@ -39,24 +39,24 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-        "actionlint",              -- yaml for github actions
-        "ansible-lint",            -- ansible
-        "beautysh",                -- bash, csh, ksh, sh, zsh
-        "codespell",               -- spell checking
-        "editorconfig-checker",    -- editorconfig
-        "eslint-lsp",              -- eslint
-        "gitlint",                 -- git
-        "hadolint",                -- docker
-        "jsonlint",                -- json
-        "luacheck",                -- lua
-        "markdownlint",            -- markdown
-        "prettierd",               -- prettier
-        "shellcheck",              -- bash
-        "shfmt",                   -- bash, mksh, shell
-        "stylua",                  -- lua
-        "vint",                    -- vim
-        "yamllint",                -- yaml
-        "misspell",                -- spell checking
+        "codespell",                  -- spell checking
+        "gitlint",                    -- git
+        -- "actionlint",              -- yaml for github actions
+        -- "ansible-lint",            -- ansible
+        -- "beautysh",                -- bash, csh, ksh, sh, zsh
+        -- "editorconfig-checker",    -- editorconfig
+        -- "eslint-lsp",              -- eslint
+        -- "hadolint",                -- docker
+        -- "jsonlint",                -- json
+        -- "luacheck",                -- lua
+        -- "markdownlint",            -- markdown
+        -- "misspell",                -- spell checking
+        -- "prettierd",               -- prettier
+        -- "shellcheck",              -- bash
+        -- "shfmt",                   -- bash, mksh, shell
+        -- "stylua",                  -- lua
+        -- "vint",                    -- vim
+        -- "yamllint",                -- yaml
       },
     },
   },
